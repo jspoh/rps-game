@@ -23,6 +23,9 @@ int main()
     const char PPAPER[] = "You chose [PAPER]";
     const char PSCISSORS[] = "You chose [SCISSORS]";
 
+    int playerScore = 0;
+    int comScore = 0;
+
     getName();  // still trying to figure out how to return !user-input! string variables to be stored as a global variable
 
     int running = 1;
@@ -36,7 +39,7 @@ int main()
         {
             (comChoice == 1) ? printf("\n%s\n%s\n%s", PROCK, CROCK, DRAW) :  // (condition) ? [do this if true] : [else/elif do this];
             (comChoice == 2) ? printf("\n%s\n%s\n%s", PROCK, CPAPER, LOSE) :  // shorthand if condition
-            printf("\n%s\n%s\n%s", PROCK, CSCISSORS, WIN);
+            printf("\n%s\n%s\n%s", PROCK, CSCISSORS, WIN);                    // limitation of using this is that i cannot score++?
         }
         else if (pChoice == 2)
         {
