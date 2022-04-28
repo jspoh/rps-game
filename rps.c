@@ -30,7 +30,7 @@ int main()
 
     int running = 1;
 
-    while (running == 1)
+    while (running)
     {
         int comChoice = getRandNum();
         int pChoice = getPlayerChoice();
